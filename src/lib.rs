@@ -523,7 +523,7 @@ impl Config {
                .args(&parallel_args)
                .current_dir(&build), "cmake");
 
-        println!("cargo:root={}", dst.display());
+        println!("cargo:root={}", build.display());
         return dst
     }
 
